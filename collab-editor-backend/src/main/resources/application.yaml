@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+gemini:
+  api:
+    # default to your key, can be overridden by env GOOGLE_API_KEY / GEMINI_API_KEY
+    key: ${GEMINI_API_KEY:AIzaSyAiDNEX4zzQsIIHTBiWMumGI3Isjs6Wl5Q}
+  # model that works with google-genai 1.27.0
+  model: gemini-2.5-flash
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web.socket: DEBUG
+    org.springframework.messaging: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

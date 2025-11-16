@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Maven (backend)
+collab-editor-backend/target/
+
+# Node/Angular (frontend)
+collab-editor-frontend/node_modules/
+collab-editor-frontend/dist/
+collab-editor-frontend/.angular/cache/
+
+# Logs
+*.log
+logs/
