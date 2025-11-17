@@ -4,7 +4,7 @@ server:
 gemini:
   api:
     # default to your key, can be overridden by env GOOGLE_API_KEY / GEMINI_API_KEY
-    key: ${GEMINI_API_KEY:AIzaSyAiDNEX4zzQsIIHTBiWMumGI3Isjs6Wl5Q}
+    key: ${GEMINI_API_KEY: PUT API KEY}
   # model that works with google-genai 1.27.0
   model: gemini-2.5-flash
 
