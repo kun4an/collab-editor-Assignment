@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Real-time Collaborative Code Editor with Gemini</h1>
+
+  <div class="room-info">
+    <label>
+      Room ID:
+      <input
+        [(ngModel)]="roomId"
+        (keyup.enter)="joinRoom()"
+        placeholder="my-session-id"
+      />
+    </label>
+    <button (click)="joinRoom()">Join Room</button>
+
+    <span *ngIf="joined">
+      Joined room: <strong>{{ roomId }}</strong> (User: {{ userId }})
+    </span>
+  </div>
+
+  <div #editorHost class="editor"></div>
+</div>
